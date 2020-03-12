@@ -66,6 +66,26 @@ body {
   background-image: url(img/box-6.png);
   background-repeat: no-repeat;
   grid-area: box-6;
+  position: relative;
+}
+
+.box-6-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 57px;
+  bottom: 67.5px;
+}
+
+.box-6-wrapper img {
+  display: block;
+  margin-bottom: 33px;
+  height: 85.5px;
+  width: 87px;
+}
+
+.box-6-wrapper h2 {
+  margin: 0;
 }
 
 .box-7 {
@@ -246,7 +266,7 @@ a {
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  border-radpx ius: 11px;
+  border-radius: 11px;
   background-color: rgba(0, 0, 0, 0);
   text-decoration: none;
   padding: 18px 39px;
@@ -268,7 +288,7 @@ form {
   display: flex;
   max-width: 621px;
   flex-direction: column;
-
+  margin-bottom: 88, 5px;
 }
 
 .input {
@@ -280,7 +300,7 @@ form {
 }
 
 input {
-  width: 50%;
+  width: 49%;
 }
 
 input[type="text"]::placeholder,
@@ -301,9 +321,26 @@ textarea {
   color: rgb(255, 255, 255);
   line-height: 1.931;
   padding: 19px 0 18px 25px;
+  box-sizing: border-box;
 }
 
 textarea {
   height: 163px;
   width: 100%;
+  margin-bottom: 88, 5px;
 }
+
+.social-wrapper {
+  margin-top: 87px;
+
+}
+
+.social-wrapper a:active {
+  transform: scale(0.8);
+}
+
+.social-wrapper a:hover {
+  transform: scale(0.5);
+}
+
+

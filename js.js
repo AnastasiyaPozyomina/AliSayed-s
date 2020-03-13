@@ -15,6 +15,11 @@ function closeNav() {
 
 
 
+AOS.init();
+
+
+
+
 
 
 

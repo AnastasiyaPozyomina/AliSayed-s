@@ -6,21 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS GRID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
 </head>
 
 <body>
+
     <div class="wrapper">
         <div class="box-1"></div>
         <div class="box-2 dark">
-            <a href="#menu" id="toggle"><span></span></a>
-            <ul id="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+              
+              <span class="open-menu"  onclick="openNav()"><img src="/img/icon-nav.png" alt="open menu"></span>
+          
             <h2>Ali Sayed’s<br> <span>Web Designing</span><br> Project</h2>
             <p class="header_p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
@@ -95,7 +105,7 @@
     </div>
 
 
-    <script src="external.js"></script>
+    <script src="/js.js"></script>
 </body>
 
 </html>
